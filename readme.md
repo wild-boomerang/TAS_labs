@@ -41,8 +41,8 @@ The input is a file with numbers in an arbitrary format. The file size must be l
 You can create a large file with numbers with this script:  
     ```python
     import random
-    with open ('numbers.txt', 'w') as f:
-        f.writelines ('{} \ n'.format (random.randint (-1000000, 1000000)) for _ in range (500000000))
+    with open('numbers.txt', 'w') as f:
+        f.writelines('{}\n'.format(random.randint(-1000000, 1000000)) for _ in range (500000000))
     ```
 1. Your converter to JSON. Implement the `to_json(obj)` function, which receives a python object as input, and outputs a JSON string.
 1. Class `n dimensional vector`. This class must have all the natural operations for a vector - addition, subtraction, multiplication by a constant and dot product, comparison by equality. In addition, there must be operations for calculating the length, getting an element by index, and also a string representation.
